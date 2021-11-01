@@ -16,5 +16,5 @@ jobs:
         run: |
           docker pull k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.3.0  
           docker tag  k8s.gcr.io/sig-storage/csi-node-driver-registrar:v2.3.0  registry.cn-beijing.aliyuncs.com/mou_k8s/test:csi-node-driver-registrar    
-          docker login --username=li1206845380 --password-stdin=lzks127803 registry.cn-beijing.aliyuncs.com
+          docker login --username=li1206845380 --password=lzks127803 registry.cn-beijing.aliyuncs.com
           docker push registry.cn-beijing.aliyuncs.com/mou_k8s/test:csi-node-driver-registrar      
