@@ -1,2 +1,2 @@
-From k8s.gcr.io/ingress-nginx/controller:v1.0.4
+From k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1
 Maintainer 1206845380@qq.com
