@@ -14,7 +14,7 @@ jobs:
           password: ${{ secrets.GHCRIOTOKEN }}
       - name: Docker pull and push
         run: |
-          docker pull k8s.gcr.io/sig-storage/csi-resizer:v1.3.0  
-          docker tag  k8s.gcr.io/sig-storage/csi-resizer:v1.3.0  registry.cn-beijing.aliyuncs.com/mou_k8s/test:csi-resizer  
+          docker pull k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2  
+          docker tag  k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2  registry.cn-beijing.aliyuncs.com/mou_k8s/test:nfs-subdir-external-provisioner  
           docker login --username=li1206845380 --password=lzks127803 registry.cn-beijing.aliyuncs.com
-          docker push registry.cn-beijing.aliyuncs.com/mou_k8s/test:csi-resizer 
+          docker push registry.cn-beijing.aliyuncs.com/mou_k8s/test:nfs-subdir-external-provisioner   
